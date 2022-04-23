@@ -37,4 +37,9 @@ public class Car {
     public void setProduction(int production) {
         this.production = production;
     }
+
+    @Override
+    public String toString() {
+        return "Name: "+name+" ;Price: "+price+" ;Production: "+production;
+    }
 }
