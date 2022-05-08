@@ -12,6 +12,7 @@ public class LoginConsole {
     Users users=new Users();
 
     private final Scanner sc;
+
     public LoginConsole(){
         this.sc=new Scanner(System.in);
     }
@@ -53,7 +54,6 @@ public class LoginConsole {
             }
         }
     }
-
 
     public void LoginStatement() throws SQLException, ClassNotFoundException {
         System.out.println("enter username:");

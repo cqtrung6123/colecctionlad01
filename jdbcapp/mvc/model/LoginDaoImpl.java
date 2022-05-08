@@ -24,7 +24,7 @@ public class LoginDaoImpl implements LoginDAO{
     @Override
     public String checkLoginPreparedStatement(Users users) throws SQLException, ClassNotFoundException {
         Connection connection=SQlServerConnection.getSQLServerConnection();
-        String query="select username from users where username=?a and password=?";
+        String query="select username from users where username=? and password=?";
         PreparedStatement preparedStatement=connection.prepareStatement(query);
         preparedStatement.setString(1,users.getUsername());
         preparedStatement.setString(2,users.getPassword());
